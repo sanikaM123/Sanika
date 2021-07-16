@@ -38,16 +38,16 @@ table tr td{
     function addCustomer(){
             var name = document.querySelector("#name").value;
             var address = document.querySelector("#address").value;
-            var amount = document.querySelector("#amount").value;
+            var amount = document.querySelector("#mobile").value;
 
             var student = studentmodule.Customer();
             student.setName(name);
             student.setAddress(address);
-            student.setAmount(amount);
+            student.setAmount(mobile);
 
             document.querySelector("#nameInput").innerText = student.getName();
             document.querySelector("#addressInput").innerText = student.getAddress();
-            document.querySelector("#amountInput").innerText = student.getAmount();
+            document.querySelector("#mobileInput").innerText = student.getAmount();
             document.querySelector(".output-content").style.display = "block";
 
 
@@ -67,7 +67,7 @@ table tr td{
         <td><textarea  id="address" cols="30" rows="10"></textarea></td>
     </tr>
     <tr>
-        <td>Amount </td>
+        <td>Mobile </td>
         <td><input type="number"  id="mobile"></td>
     </tr>
     <tr>
@@ -88,7 +88,7 @@ table tr td{
     </tr>
     <tr>
         <td>Mobile </td>
-        <td><h5 id="amountInput"></h5></td>
+        <td><h5 id="mobileInput"></h5></td>
     </tr>
 </table>
         
