@@ -40,14 +40,14 @@ table tr td{
             var address = document.querySelector("address").value;
             var amount = document.querySelector("amount").value;
 
-            var customer = CustomerModule.Customer();
+            var customer = studentmodule.Customer();
             customer.setName(name);
             customer.setAddress(address);
             customer.setAmount(amount);
 
-            document.querySelector("nameInput").innerText = customer.getName();
-            document.querySelector("addressInput").innerText = customer.getAddress();
-            document.querySelector("amountInput").innerText = customer.getAmount();
+            document.querySelector("nameInput").innerText = student.getName();
+            document.querySelector("addressInput").innerText = student.getAddress();
+            document.querySelector("amountInput").innerText = student.getAmount();
             document.querySelector(".output-content").style.display = "block";
 
 
