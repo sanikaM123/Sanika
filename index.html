@@ -8,13 +8,14 @@
   <script src="iiff.js"></script>
   <style>
     .stdform{
-      display: none;
-      margin: 1rem;
-      padding: 2rem;
+      margin: 10px;
+    padding: 100px;
+    border: 2px solid black;
+    display: none;
     }
     table{
-      padding: 1rem;
-      border: 2px solid black;
+      width: fit-content;
+      padding: 5px;
     }
     button{
       margin: 0.5rem;
@@ -53,9 +54,11 @@
     <td>mobile : &emsp; </td>
     <td><input type="text" id="mob"></td>
   </tr>
-  </table>
-  <button onclick="submit()">submit</button>
   
+  <tr>
+        <td><input type="button" value="Add" onclick="addCustomer()"></td>
+    </tr>
+  </table>
   <div class="stdform" id="stdform1" >
     <table>
       <tr>
