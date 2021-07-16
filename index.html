@@ -36,18 +36,18 @@ table tr td{
 <body>
   <script>
     function addCustomer(){
-            var name = document.querySelector("name").value;
-            var address = document.querySelector("address").value;
-            var amount = document.querySelector("amount").value;
+            var name = document.querySelector("#name").value;
+            var address = document.querySelector("#address").value;
+            var amount = document.querySelector("#amount").value;
 
             var student = studentmodule.Customer();
             student.setName(name);
             student.setAddress(address);
             student.setAmount(amount);
 
-            document.querySelector("nameInput").innerText = student.getName();
-            document.querySelector("addressInput").innerText = student.getAddress();
-            document.querySelector("amountInput").innerText = student.getAmount();
+            document.querySelector("#nameInput").innerText = student.getName();
+            document.querySelector("#addressInput").innerText = student.getAddress();
+            document.querySelector("#amountInput").innerText = student.getAmount();
             document.querySelector(".output-content").style.display = "block";
 
 
